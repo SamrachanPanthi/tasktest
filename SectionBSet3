@@ -1,0 +1,61 @@
+Method overloading means defining multiple methods in the same class with the same name but different parameter
+ lists (type, number, or order of parameters).Example:
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(2, 3));           
+        System.out.println(calc.add(2.5, 3.5));    
+        System.out.println(calc.add(1, 2, 3));      
+    }
+}
+
+Method overloading and method overriding are two important concepts in Java that support polymorphism,
+but they differ in their use and behavior. Method overloading occurs within the same class, where 
+multiple methods have the same name but differ in the number, type, or order of parameters. 
+It enables compile-time (static) polymorphism and is used to increase flexibility by allowing
+different ways to perform similar operations using the same method name. On the other hand, method overriding
+happens between a superclass and a subclass. In overriding, a method in the subclass has the same name, return
+type, and parameters as a method in its superclass. It enables runtime (dynamic) polymorphismand is used to modify
+or extend the behavior of inherited methods. While overloaded methods can have different return types, overridden 
+methods must have the sameor a compatible (covariant) return type. Overloading focuses on providing multiple ways 
+to use a method in one class, whereas overriding is about customizing or replacing inherited behavior in a child class.
+
+2. What is the role of the super keyword in Java? Demonstrate its usage with a code example.
+ In Java, the super keyword is used to refer to the immediate parent class and plays a crucial role in inheritance.
+It allows a subclass to call the constructor of its parent class using super(), which is often necessary to properly
+initialize the inherited parts of an object. Additionally, super enables a subclass to invoke a method from the parent 
+class that has been overridden, ensuring access to the original behavior when needed. It can also be used to access parent class
+variables if they are hidden by variables with the same name in the subclass. Overall, super helps manage and extend inherited
+ functionality clearly and effectively within a subclass.
+
+Java class and object:
+A class is a blueprint or template that defines the properties (fields) and behaviors (methods) that objects created from the
+ class will have. An object is an instance of a class; it represents a real-world entity with specific values for the class's properties.
+
+Constructor overloading:
+Constructor overloading in Java means having multiple constructors in the same class with different 
+parameter lists. It allows objects to be created in different ways by passing different sets of arguments.
+
+
+
+Importance of the main method:
+The main method is the entry point of any Java application. It is where the program starts execution. The signature 
+public static void main(String[] args) is required for the JVM to run the class as a standalone program.
+
+Access modifiers in Java control access to classes, methods, and variables. public allows access from anywhere, 
+private restricts access to the same class, protected allows access within the package and subclasses, and default
+(no modifier) limits access to the package.

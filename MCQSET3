@@ -1,0 +1,13 @@
+1 int arr[] = {1, 2, 3};
+2 2
+3 extends
+4 public
+ 5 Compilation
+6  Defining a method in a subclass that already exists in the parent class
+7  8
+ 8 char
+ 9 4
+  10 Hiding implementation details and exposing only necessary parts
+  11 implements
+  12 do-while
+
